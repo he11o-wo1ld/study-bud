@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>Home</h1>
+
+{% for item in rooms %}
+    <p>{{ item.id }} -- {{ item.name }}</p>
+{% endfor %}
+
+{% endblock %}
